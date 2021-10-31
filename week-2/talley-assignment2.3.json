@@ -1,0 +1,28 @@
+{
+    "Class": {
+        "_id": 222,
+        "name": "Web Design",
+        "Enroll": [
+            {
+                "_id": 987,
+                "Student": {
+                    "_id": 987,
+                    "first_name": "Clark",
+                    "last_name": "Kent",
+                    "mi": "J"
+                },
+                "grade": "B"
+            },
+            {
+                "_id": 101,
+                "Student": {
+                    "_id": 101,
+                    "first_name": "Bruce",
+                    "last_name": "Wayne",
+                    "mi": "T"
+                },
+                "grade": "A"
+            }
+        ]
+    }
+}

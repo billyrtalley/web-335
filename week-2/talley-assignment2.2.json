@@ -1,0 +1,28 @@
+{
+    "Customer": {
+        "_id": 789,
+        "first_name": "Bruce",
+        "last_name": "Wayne",
+        "date_of_birth": "04-17-1978",
+        "user_name": "notBatman",
+        "Invoice": [
+            {
+                "_id": 2020,
+                "date_created": "10-29-2021",
+                "date_shipped": "10-31-2021",
+                "line_item_fields": [
+                    {
+                        "_id": 444,
+                        "name": "Bat-shaped throwing stars",
+                        "price": 525.00,
+                        "quantity": 20
+                    }                    
+                ],
+                "subtotal": 10500.00,
+                "tax": 840.00,
+                "total": 11340.00
+            }
+           
+        ]
+    }
+}
