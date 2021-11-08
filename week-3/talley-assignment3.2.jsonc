@@ -26,8 +26,8 @@
             "link_user_role": {
                 "user_role_id": "CB789",
                 "role": {
-                    "role_id": "Level 1",
-                    "role_title": "Manager",
+                    "role_id": "1A",
+                    "role_title": "Project Manager",
                     "link_role_permission": {
                         "permission_id": "1A1"
                     }
@@ -66,7 +66,7 @@
         },
         {
 
- //permission belonging to link role permission          
+ //permission belonging to many link role permission          
             "user_id":234432,
             "name": "Linus VanPelt",
             "link_user_role": [
