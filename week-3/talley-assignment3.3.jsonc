@@ -1,0 +1,59 @@
+// Title: Assignment 3.3- NodeBook
+// Author: William Talley
+// Date: 11/7/2021
+// Description: This assignment is to practice creating
+// an Object Relational Diagram(ORD) from the provided data fields and
+// then using the ORD to create business rules and a NoSQL database.
+// NodeBook ORD Business Rules
+// 1)	A PUBLISHER may publish many Book(s)
+// 2)	A BOOK has one PUBLISHER
+// 3)	A BOOK may can many AUTHOR(s)
+// 4)	An AUTHOR may write many BOOK(s)
+
+
+{
+    "publisher": {
+      "publisher_code": "105",
+      "publisher_name": "W. W. Norton & Company, Inc.",
+      "publisher_address": "New York, NY 10110",
+      "book": [
+        { 
+          "book_isbn": "9780393039764",
+          "book_name": "Fight Club",
+          "book_price": 16.99,
+          "author": {
+            "author_first_name": "Chuck",
+            "author_last_name": "Palaniuk",
+            "author_phone": "555-555-1000",
+            "author_email": "fightclub@gmail.com"
+          }
+        },
+        { 
+          "book_isbn": "978-0-393-88788-4",
+          "book_name": "The Sun Also Rises",
+          "book_price": 19.99,
+          "author": [
+            {
+              "author_first_name": "Ernest",
+              "author_last_name": "Hemingway",
+              "author_phone": "555-555-1212",
+              "author_email": "hemingwayestate@gmail.com"
+            }
+          ]
+        },
+        { 
+            "book_isbn": "978-0-393-42036-4",
+            "book_name": "The Jungle",
+            "book_price": 19.99,
+            "author": [
+              {
+                "author_first_name": "Upton ",
+                "author_last_name": "Sinclair",
+                "author_phone": "555-555-1414",
+                "author_email": "sinclairestate@gmail.com"
+              }
+            ]
+          }
+      ] 
+    }
+  }

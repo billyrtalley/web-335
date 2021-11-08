@@ -1,0 +1,86 @@
+// Title: Assignment 3.2- NodeSecurity
+// Author: William Talley
+// Date: 11/7/2021
+// Description: This assignment is to practice taking
+// an Object Relational Diagram(ORD) and converting it
+// into business rules and a NoSQL database
+// References Source:
+// Abid, U. A. (2012, June 13).
+// What is the main difference between HAS_MANY and BELONGS TO relationship in mysql?
+// Software Engineering Stack Exchange. Retrieved November 7, 2021,
+// from https://softwareengineering.stackexchange.com/questions/152731/what-is-the-main-difference-between-has-many-and-belongs-to-relationship-in-mysq
+// Source used to get a better understanding of HAS MANY and BELONGS TO
+// ORD Business Rules
+
+// 1)	A USER may have many LINK_USER_ROLES(s)
+// 2)	A ROLE may belong to many LINK_USER_ROLE(s)
+// 3)	A ROLE may have many LINK_ROLE_PERMISSION(s)
+// 4)	A PERMISSION may belong to many LINK_ROLE_PERMISSION(s)
+
+// first user have one role
+{
+    "user": [
+        {
+            "user_id": 789987,
+            "name": "Charles Brown",
+            "link_user_role": {
+                "user_role_id": "CB789",
+                "role": {
+                    "role_id": "Level 1",
+                    "role_title": "Manager",
+                    "link_role_permission": {
+                        "permission_id": "1A1"
+                    }
+                }
+
+            }
+        },
+
+//user with multiple roles
+
+        {
+            "user_id": 567765,
+            "name": "Lucille VanPelt",
+            "link_user_role": [
+                {
+                    "user_role_id": "LV567",
+                    "role": {
+                        "role_id": "2A",
+                        "role_title": "Deputy Project Manager",
+                        "link_role_permission": {
+                            "permission_id": "1A2"
+                        }
+                    }
+                },
+                {
+                    "user_role_id": "123125",
+                    "role": {
+                        "role_id": "3A",
+                        "role_title": "Data Analyst",
+                        "link_role_permission": {
+                            "permission_id": "1A3"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+
+ //permission belonging to link role permission          
+            "user_id":234432,
+            "name": "Linus VanPelt",
+            "link_user_role": [
+                {
+                    "user_role_id": "LV234",
+                    "role": {
+                        "role_id": "1B",
+                        "role_title": "IT Technician",
+                        "link_role_permission": {
+                            "permission_id": "1A1"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
