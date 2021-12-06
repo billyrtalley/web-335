@@ -1,5 +1,5 @@
 # Title: WEB335 Assignment 8.3 Python in Action
-# Date: 28 November, 2021
+# Date: December 6, 2021
 # Description: This exercise's objective is to use 
 #Python to create a small calculator functions
 #Source: Tagliaferri, Linda. June 29, 2021. Community. url: https://www.digitalocean.com/community/tutorials/how-to-do-math-in-python-3-with-operators 
