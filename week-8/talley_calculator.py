@@ -7,15 +7,15 @@
 #url: https://stackoverflow.com/questions/45529502/write-a-program-to-find-sum-of-two-numbers-using-functions-and-calculate-their-a/45531659 
 
 
-#addition function
+# #addition function
 def add(number01, number02):
     return number01 + number02
 
-#subtraction function
+# #subtraction function
 def subtract(number01, number02):
     return number01 - number02
 
-#division function
+# #division function
 def divide(number01, number02):
     return number01/number02
 
